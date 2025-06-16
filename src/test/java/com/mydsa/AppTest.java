@@ -1,4 +1,4 @@
-package com.comcast.xsauth4j;
+package com.mydsa;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
