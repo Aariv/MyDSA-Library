@@ -12,9 +12,9 @@ This repository contains custom implementations of fundamental data structures a
 | Structure       | Status  |
 |----------------|---------|
 | Array          | ✅ Done |
-| Linked List    | ⏳ WIP  |
-| Stack          | ⏳ WIP  |
-| Queue          | ⏳ WIP  |
+| Linked List    | ✅ Done |
+| Stack          | ✅ Done |
+| Queue          | ✅ Done |
 | HashMap        | 🔜      |
 | Binary Tree    | 🔜      |
 | Heap           | 🔜      |
