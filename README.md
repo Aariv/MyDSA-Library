@@ -15,9 +15,9 @@ This repository contains custom implementations of fundamental data structures a
 | Linked List    | ✅ Done |
 | Stack          | ✅ Done |
 | Queue          | ✅ Done |
-| HashMap        | 🔜      |
+| HashMap        | ✅ Done |
 | Binary Tree    | 🔜      |
-| Heap           | 🔜      |
+| Heap           | ✅ Done |
 | Trie           | 🔜      |
 | Graph          | 🔜      |
 
