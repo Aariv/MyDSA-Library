@@ -1,6 +1,8 @@
 package com.mydsa.linkedlist;
 
-public class LinkedList {
+public class LinkedList
+
+{
     private Node head;
     private int size;
 
