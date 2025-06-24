@@ -54,7 +54,9 @@ public class MyTrie {
         if (current == null) return false;
 
         if (depth == word.length()) {
-            if (!current.isEndOfWord) return false; // Word not found
+            if (!current.isEndOfWord) {
+                return false;
+            } // Word not found
             current.isEndOfWord = false;
             return isEmpty(current);
         }
