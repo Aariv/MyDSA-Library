@@ -12,13 +12,17 @@ public class MyGraph {
     }
 
     public void addVertex(String label) {
-        if (getVertex(label) != null || vertexCount >= MAX_VERTICES) return;
+        if (getVertex(label) != null || vertexCount >= MAX_VERTICES) {
+            return;
+        }
         vertices[vertexCount++] = new GraphNode(label);
     }
 
     public void removeVertex(String label) {
         GraphNode toRemove = getVertex(label);
-        if (toRemove == null) return;
+        if (toRemove == null) {
+            return;
+        }
 
         // Remove from vertices list
         int index = getVertexIndex(label);
@@ -96,7 +100,9 @@ public class MyGraph {
 
     private void dfsHelper(GraphNode node, boolean[] visited) {
         int index = getVertexIndex(node.label);
-        if (visited[index]) return;
+        if (visited[index]) {
+            return;
+        }
 
         visited[index] = true;
         System.out.print(node.label + " ");
@@ -113,7 +119,9 @@ public class MyGraph {
         int front = 0, rear = 0;
 
         GraphNode start = getVertex(startLabel);
-        if (start == null) return;
+        if (start == null) {
+            return;
+        }
 
         int startIndex = getVertexIndex(startLabel);
         visited[startIndex] = true;
