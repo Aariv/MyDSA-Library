@@ -70,4 +70,17 @@ public class Array {
         }
         System.out.println("]");
     }
+
+    public void set(int index, int ele) {
+        checkBounds(index);
+        data[index] = ele; // Set value at index
+    }
+
+    public int[] toArray() {
+        int[] result = new int[size];
+        for (int i = 0; i < size; i++) {
+            result[i] = data[i]; // Copy elements to new array
+        }
+        return result;
+    }
 }
