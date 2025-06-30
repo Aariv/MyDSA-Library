@@ -31,7 +31,9 @@ public class MyDisjointSet {
         int rootX = find(x);
         int rootY = find(y);
 
-        if (rootX == rootY) return;
+        if (rootX == rootY) {
+            return;
+        }
 
         if (rank[rootX] < rank[rootY]) {
             parent[rootX] = rootY;
