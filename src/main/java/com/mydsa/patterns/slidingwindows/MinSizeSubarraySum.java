@@ -2,6 +2,12 @@ package com.mydsa.patterns.slidingwindows;
 
 public class MinSizeSubarraySum {
 
+    /**
+     * Reviewed
+     * @param target
+     * @param nums
+     * @return
+     */
     public static int minSubArrayLen(int target, int[] nums) {
         int n = nums.length;
         int minLen = Integer.MAX_VALUE;
