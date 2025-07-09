@@ -18,6 +18,20 @@ It helps to understand how the function operates and how many times it is called
 - **Recursive Function**: A function that calls itself to solve a problem. It typically consists of a base case and a recursive case.
 - **Recursive Algorithm**: An algorithm that uses recursion to solve a problem. It breaks down the problem into smaller subproblems, solves each subproblem recursively, and combines the results to solve the original problem.
 
+### Parameterized Recursion
+Parameterized recursion is a type of recursion where the recursive function takes parameters that influence its behavior. This allows the function to operate on different inputs and can lead to more flexible and reusable code.
+### Types of Recursion
+- **Direct Recursion**: A function that calls itself directly.
+- **Indirect Recursion**: A function that calls another function, which in turn calls the first function. This can create a cycle of function calls.
+- **Tail Recursion**: A specific type of recursion where the recursive call is the last operation in the function. This can be optimized by the compiler to avoid increasing the call stack depth, thus preventing stack overflow.
+- **Head Recursion**: A type of recursion where the recursive call is made before any other operations in the function. This can lead to deeper recursion and is less efficient than tail recursion.
+- **Tree Recursion**: A type of recursion where a function makes multiple recursive calls, creating a tree-like structure of function calls. This can lead to exponential growth in the number of calls and is often used in problems like generating combinations or permutations.
+- **Linear Recursion**: A type of recursion where a function makes a single recursive call in each invocation. This is the most common form of recursion and is used in problems like calculating factorials or Fibonacci numbers.
+- **Binary Recursion**: A type of recursion where a function makes two recursive calls in each invocation. This is often used in problems like binary search or tree traversals.
+- **Mutual Recursion**: A type of recursion where two or more functions call each other in a cycle. This can be used to solve problems that require alternating behavior between functions.
+- **Nested Recursion**: A type of recursion where a function makes a recursive call within another recursive call. This can lead to complex behavior and is often used in problems like the Ackermann function.
+- **Exponential Recursion**: A type of recursion where the number of recursive calls grows exponentially with the input size. This is often seen in problems like calculating Fibonacci numbers without memoization or solving combinatorial problems.
+
 ### Problems on Recursion
 
 ### Basic Problems
