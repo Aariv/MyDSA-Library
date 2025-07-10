@@ -12,6 +12,8 @@ public class RecursionProblems {
         System.out.println("==========================");
         printNto1(n);
         System.out.println("==========================");
+        // Sum is 1 + 2 + 3 + 4 => 10.
+        System.out.print(sumOfN(4));
 
     }
 
@@ -47,5 +49,14 @@ public class RecursionProblems {
         System.out.println(name);
         // Recursive call with n decremented by 1
         printName(name, n - 1);
+    }
+
+    public static int sumOfN(int n) {
+        // Base condition - stop the recursion
+        if(n <= 0) {
+            return 0;
+        }
+        // Recursive call with n decremented by 1 and adding n to the result
+        return n + sumOfN(n - 1);
     }
 }
