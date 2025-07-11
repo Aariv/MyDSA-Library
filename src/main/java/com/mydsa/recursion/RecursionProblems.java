@@ -157,4 +157,21 @@ public class RecursionProblems {
             current.deleteCharAt(current.length() - 1); // Backtrack
         }
     }
+
+    // Check if there exists a subsequence with sum K
+    public static boolean isSubsetSum(int[] arr, int n, int sum) {
+        // Base condition - if sum is 0, we found a subset
+        if(sum == 0) {
+            return true;
+        }
+        // If no elements left or sum becomes negative
+        if(n == 0 || sum < 0) {
+            return false;
+        }
+        // Exclude the last element and check
+        boolean exclude = isSubsetSum(arr, n - 1, sum);
+        // Include the last element and check
+        boolean include = isSubsetSum(arr, n - 1, sum - arr[n - 1]);
+        return include || exclude;
+    }
 }
