@@ -7,12 +7,15 @@ import java.util.List;
 public class Recursion_July18 {
 
 	public static void main(String[] args) {
-		int[] input = {4, 9, 2, 5, 1};
-		int target = 10;
+		int[] input = {4, 2, 10, 5, 1, 3};
+		int target = 5;
 		
 		System.out.println(combinationSum2(input, target));
 	}
 
+	// Given an array of distinct integers candidates and a target integer target, 
+	// return a list of all unique combinations of candidates where the chosen numbers sum to target. 
+	// You may return the combinations in any order.
 	private static List<List<Integer>> combinationSum(int[] input, int target) {
 		List<Integer> innerArray = new ArrayList<Integer>();
 		List<List<Integer>> result = new ArrayList<List<Integer>>();
@@ -29,13 +32,17 @@ public class Recursion_July18 {
 		if(target < 0)
 			return;
 		
-		for(int i = 0; i < input.length; i++) {
+		for(int i = index; i < input.length; i++) {
 			innerArray.add(input[i]);
 			combinationSum(input, result, innerArray, target - input[i], i);
 			innerArray.remove(innerArray.size() -1);
 		}
 	}
 	
+	// Given a collection of candidate numbers (candidates) and a target number (target), 
+	// find all unique combinations in candidates where the candidate numbers sum to target.
+	// Each number in candidates may only be used once in the combination.
+
 	private static List<List<Integer>> combinationSum2(int[] input, int target) {
 		List<Integer> innerArray = new ArrayList<Integer>();
 		List<List<Integer>> result = new ArrayList<List<Integer>>();
@@ -64,6 +71,9 @@ public class Recursion_July18 {
 		}
 	}
 	
+	// Find all valid combinations of k numbers that sum up to n such that the following conditions are true:
+	// Only numbers 1 through 9 are used.
+	// Each number is used at most once.
 	private static List<List<Integer>> combinationSum3(int k, int n) {
 		List<Integer> innerArray = new ArrayList<Integer>();
 		List<List<Integer>> result = new ArrayList<List<Integer>>();

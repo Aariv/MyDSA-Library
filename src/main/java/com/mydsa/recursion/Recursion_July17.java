@@ -8,20 +8,20 @@ public class Recursion_July17 {
 
 	public static void main(String[] args) {
 		// Subset
-		int[] arr = {1, 2, 3};
+		int[] arr = {2, 3};
 		int i = 1;
 		for(List<Integer> set : subSet(arr)) {
 			System.out.println((i) + ":"+ set);
 			i++;
 		}
-		
 	}
 
+	// Given an integer array nums of unique elements, return all possible subsets (the power set).
+	// The solution set must not contain duplicate subsets. Return the solution in any order.
 	private static List<List<Integer>> subSet(int[] arr) {
 		List<List<Integer>> result = new ArrayList<List<Integer>>();
 		List<Integer> innerArray = new ArrayList<Integer>();
-		int index = 0;
-		subSetHelper(arr, innerArray, result, index);
+		subSetHelper(arr, innerArray, result, 0);
 		return result;
 	}
 
@@ -35,7 +35,8 @@ public class Recursion_July17 {
 		}
 	}
 	
-	
+	// Given an integer array nums that may contain duplicates, return all possible subsets (the power set).
+	// The solution set must not contain duplicate subsets. Return the solution in any order.
 	private static List<List<Integer>> subSet2(int[] arr) {
 		List<List<Integer>> result = new ArrayList<List<Integer>>();
 		List<Integer> innerArray = new ArrayList<Integer>();
