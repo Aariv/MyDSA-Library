@@ -34,7 +34,7 @@ public class RecursionRevision_July14 {
 		System.out.println(isPalindrome("MADAN"));
 		// 8
 		System.out.println("--------");
-		System.out.println(fib(5));
+		System.out.println(fib(4));
 		// 9
 		System.out.println("--------");
 		System.out.println(sumOfArray(arr));

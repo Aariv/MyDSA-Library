@@ -9,7 +9,7 @@ import java.util.Stack;
 public class Recursion_July16 {
 
 	public static void main(String[] args) {
-		List<String> result = generateParentheses(3);
+		List<String> result = generateParentheses(2);
         for (String s : result) {
             System.out.println(s);
         }
