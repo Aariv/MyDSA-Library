@@ -6,7 +6,7 @@ import java.util.List;
 public class SubsetGenerator {
 
     public static void main(String[] args) {
-        int[] nums = {1, 2};
+        int[] nums = {1, 2, 3};
         List<List<Integer>> result = new ArrayList<>();
 //        generateSubsets(nums, 0, new ArrayList<>(), result);
         result = subSet(nums);
@@ -51,8 +51,7 @@ public class SubsetGenerator {
  	private static void subSetHelper(int[] arr, List<Integer> innerArray, List<List<Integer>> result, int index) {
  	// Print the current state before diving deeper
         System.out.println("Index: " + index + " | Current: " + innerArray);
- 		innerArray = new ArrayList<Integer>(innerArray);
- 		result.add(innerArray);
+ 		result.add(new ArrayList<Integer>(innerArray));
  		for(int i = index; i < arr.length; i++) {
  			System.out.println("Include " + arr[index]);
  			innerArray.add(arr[i]);
